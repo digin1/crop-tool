@@ -2,6 +2,25 @@
 
 A lightweight desktop image cropper built with PySide6.
 
+## Screenshots
+
+Main window with aspect-ratio crop and folder strip:
+
+![Main crop window](docs/screenshots/main-window.png)
+
+Open dialog with thumbnail grid, navigation, and preview:
+
+![Open image dialog](docs/screenshots/open-dialog.png)
+
+Demo images used for screenshots live in `demo/assets/` (synthetic test files only).
+
+Regenerate screenshots:
+
+```bash
+python scripts/generate_demo_assets.py
+xvfb-run -a python scripts/capture_screenshots.py
+```
+
 ## Install
 
 **One-command install (pulls all dependencies automatically):**
