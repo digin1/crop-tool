@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crop-tool"
+version = "1.0.0"
+description = "A simple desktop image crop tool built with PySide6"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "crop-tool" }]
+dependencies = [
+    "PySide6>=6.5",
+    "Pillow>=10.0",
+    "pillow-heif>=0.15",
+]
+
+[project.optional-dependencies]
+bundle = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+crop-tool = "crop_tool.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/digin1/crop-tool"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crop_tool*"]
