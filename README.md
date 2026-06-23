@@ -4,6 +4,8 @@ A lightweight desktop image cropper built with PySide6.
 
 ## Screenshots
 
+Screenshots and demo assets were created with **Grok Imagine** (synthetic UI previews and test images only — no personal photos or folders).
+
 Main window with aspect-ratio crop and folder strip:
 
 ![Main crop window](docs/screenshots/main-window.png)
@@ -12,9 +14,9 @@ Open dialog with thumbnail grid, navigation, and preview:
 
 ![Open image dialog](docs/screenshots/open-dialog.png)
 
-Demo images used for screenshots live in `demo/assets/` (synthetic test files only).
+Demo images for testing live in `demo/assets/` (fictional `demo/assets` folder only).
 
-Regenerate screenshots:
+Capture real UI screenshots from the running app (optional):
 
 ```bash
 python scripts/generate_demo_assets.py
