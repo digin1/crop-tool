@@ -4,20 +4,9 @@ A lightweight desktop image cropper built with PySide6.
 
 ## Screenshots
 
-Real app UI captures (demo images loaded from `demo/assets/`):
-
 ![Main crop window](docs/screenshots/main-window.png)
 
 ![Open image dialog](docs/screenshots/open-dialog.png)
-
-Demo test images in `demo/assets/` were created with **Grok Imagine** (synthetic only — no personal photos or folders).
-
-Regenerate:
-
-```bash
-# Re-capture UI screenshots (uses demo/assets/)
-xvfb-run -a python scripts/capture_screenshots.py
-```
 
 ## Install
 
