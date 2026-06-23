@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capture README screenshots using demo assets only."""
+"""Capture real README UI screenshots using Imagine demo assets in demo/assets/."""
 
 from __future__ import annotations
 
