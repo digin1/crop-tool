@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Crop Tool
+GenericName=Image Cropper
+Comment=Open and crop images with Crop Tool
+Exec=@EXEC@ %f
+Icon=image-x-generic
+Terminal=false
+Type=Application
+Categories=Graphics;
+MimeType=image/png;image/jpeg;image/bmp;image/gif;image/webp;image/tiff;image/heic;image/heif;
+StartupNotify=true

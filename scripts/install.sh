@@ -14,6 +14,9 @@ if command -v pipx >/dev/null 2>&1; then
   echo "Installing with pipx..."
   pipx install --force "$ROOT"
   echo
+  echo "Registering Nautilus / Open With integration..."
+  "$ROOT/scripts/install-file-manager.sh"
+  echo
   echo "Done. Run: crop-tool"
   exit 0
 fi
@@ -29,6 +32,10 @@ python3 -m venv "$VENV"
 
 mkdir -p "$BIN_DIR"
 ln -sf "$VENV/bin/crop-tool" "$BIN_DIR/crop-tool"
+
+echo
+echo "Registering Nautilus / Open With integration..."
+"$ROOT/scripts/install-file-manager.sh"
 
 echo
 echo "Done. Ensure this is on your PATH:"
